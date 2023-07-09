@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Redirect;
              'email' => $request->email
         ];
 
-        return  view ('user_data')->with (['user_data' => $user_data]);
+        return  view ('user_data')->with(['user_data' => $user_data]);
 
         // return response ()->json ($user_data);
 
