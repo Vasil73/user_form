@@ -27,8 +27,5 @@ Route::get('/', function () {
 
 Route::get('/user_form', [ \App\Http\Controllers\FormProcessorController::class, 'index' ]);
 
-Route::post('/user_form/data', [ \App\Http\Controllers\FormProcessorController::class, 'store' ]);
-
-Route::get('/user', [\App\Http\Controllers\FormProcessorController::class, 'user'])->name('hello_user');
-
-Route::get('/user_hello', [\App\Http\Controllers\HelloController::class, 'hello']);
+Route::post('/user_data', [ \App\Http\Controllers\FormProcessorController::class, 'store' ])
+    ->name ('user_form_data');
